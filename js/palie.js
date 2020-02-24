@@ -1,13 +1,20 @@
-function palindrome(str) {
+// crea un prompt di richiesta per la parola palindroma
+// creo una funzione di verifica
+// verifico tramite console.log
 
-    var len = str.length;
-    var mid = Math.floor(len/2);
+var input = prompt('Inserisci una parola palindroma');
+var check = palindroma(input);
 
-    for ( var i = 0; i < mid; i++ ) {
-        if (str[i] !== str[len - 1 - i]) {
-            return false;
-        }
+function palindroma(input) {
+    var reverse = '';
+    for (var i = input.length-1; i >= 0; i--) {
+        reverse += input[i];
     }
+    return reverse;
+}
 
-    return true;
+if (input == check) {
+    console.log('La parola scelta è palindroma');
+} else {
+    console.log('La parola scelta non è palindroma');
 }
