@@ -2,6 +2,7 @@
 // chiedi all'utente di inserire un numero da 1 a 5 (prompt)
 // generiamo un numero random da 1 a 5 (math.random)
 // somma i due numeri
+// 
 
 var pariODispari = parseInt(prompt("Inserisci un numero pari o dispari"));
 
